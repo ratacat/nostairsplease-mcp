@@ -1,0 +1,8 @@
+site_name: No Stairs Please MCP Docs
+site_url: https://nostairsplease-mcp.readthedocs.io/
+site_description: Documentation for the No Stairs Please remote MCP server for live music venue booking across 50 US states, DC, and British Columbia.
+repo_url: https://github.com/ratacat/nostairsplease-mcp
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
