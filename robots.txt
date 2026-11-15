@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ratacat.github.io/nostairsplease-mcp/sitemap.xml
