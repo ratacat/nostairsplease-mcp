@@ -1,0 +1,30 @@
+openapi: 3.1.0
+info:
+  title: No Stairs Please MCP Server
+  version: 0.1.0
+  description: |
+    Every small stage in all 50 states, and who books it.
+
+    [No Stairs Please](https://nostairsplease.com/) provides a live-music venue directory and an open [No Stairs Please MCP Server](https://nostairsplease.com/mcp) for independent bands, solo acts, DIY tour bookers, and talent buyers looking for under-400-capacity rooms across all 50 US states, DC, and British Columbia.
+
+    - [Explore the MCP Server](https://nostairsplease.com/mcp)
+    - [Browse Small Music Venues](https://nostairsplease.com/venues)
+    - [MCP Server Card JSON](https://nostairsplease.com/.well-known/mcp/server-card.json)
+  contact:
+    name: Jared Smith
+    url: https://nostairsplease.com/mcp
+    email: links@nostairsplease.com
+externalDocs:
+  description: No Stairs Please MCP Server Documentation
+  url: https://nostairsplease.com/mcp
+servers:
+  - url: https://nostairsplease.com/mcp
+    description: Production MCP Endpoint
+paths:
+  /.well-known/mcp/server-card.json:
+    get:
+      summary: Get MCP Server Card
+      description: Returns the [No Stairs Please MCP Server](https://nostairsplease.com/mcp) discovery card.
+      responses:
+        "200":
+          description: Server card JSON
